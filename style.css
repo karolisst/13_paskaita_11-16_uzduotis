@@ -1,0 +1,29 @@
+body {
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+header {
+    height: 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 60px 0 60px;
+    background-color: #303030;
+}
+
+header > img {
+    width: 300px;
+}
+
+header nav {
+    display: flex;
+    flex-direction: wrap;
+    flex-flow: wrap;
+    column-gap: 25px;
+}
+
+header nav > a {
+    color: white;
+    text-decoration: none;
+    font-size: 26px;
+}
