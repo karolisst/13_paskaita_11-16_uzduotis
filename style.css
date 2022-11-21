@@ -1,4 +1,5 @@
 body {
+    background-color: #ededef;
     font-family: 'Montserrat Alternates', sans-serif;
 }
 
@@ -26,4 +27,200 @@ header nav > a {
     color: white;
     text-decoration: none;
     font-size: 26px;
+}
+
+main {
+    margin: 30px 40px 30px 40px;
+    display: grid;
+    grid-template-columns: repeat(5 , 1fr);
+    grid-template-rows: repeat(5 , 100px) repeat(3 , 170px) repeat(2 , 50px);
+    gap: 15px;
+}
+
+main > div {
+    box-shadow: #bbbbbb7c 0px 0px 10px;
+}
+
+main > div:first-child {
+    grid-area: 1 / 1 / 5 / 4 ;
+    background-image: url(source/photo-one.jpg);
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+}
+
+main > div:nth-child(2) {
+    grid-area: 1 / 4 / 4 / 6 ;
+    background-color: #bfbfc7; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: justify;
+    padding: 20px 15px 20px 15px;
+    line-height: 1.4;
+}
+
+main > div:nth-child(3) {
+    grid-area: 4 / 4 / 6 / 4 ;
+    background-image: url(source/photo-2.jpg);
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+}
+
+main > div:nth-child(4) {
+    grid-area: 4 / 5 / 6 / 6 ;
+    background-image: url(source/photo3.jpg);
+    background-size: cover;
+    background-position: right;
+    background-repeat: no-repeat;
+}
+
+main > div:nth-child(5) {
+    grid-area: 5 / 1 / 7 / 1 ;
+    background-image: url(source/photo4.jpg);
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat; 
+}
+
+main > div:nth-child(6) {
+    grid-area: 5 / 2 / 7 / 3 ;
+    background-image: url(source/photo5.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; 
+}
+
+main > div:nth-child(7) {
+    grid-area: 5 / 3 / 7 / 4 ;
+    background-image: url(source/photo6.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; 
+}
+
+main > div:nth-child(8) {
+    grid-area: 6 / 4 / 9 / 4 ; 
+}
+
+main > div:nth-child(9) {
+    grid-area: 6 / 5 / 8 / 5 ; 
+}
+
+main > div:nth-child(10) {
+    grid-area: 7 / 1 / 11 / 1 ; 
+}
+
+main > div:nth-child(11) {
+    grid-area: 7 / 2 / 11 / 2 ; 
+}
+
+main > div:nth-child(12) {
+    grid-area: 7 / 3 / 11 / 3 ;
+    background-image: url(source/photo7.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; 
+}
+
+main > div:nth-child(13) {
+    grid-area: 9 / 4 / 11 / 4; 
+    background-image: url(source/photo9.jpg);
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat; 
+}
+
+main > div:nth-child(14) {
+    grid-area: 8 / 5 / 11 / 5;
+    background-image: url(source/photo8.jpg);
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat; 
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    background-color: #303030;
+    gap: 15px;
+}
+
+footer > img {
+    width: 80px
+}
+
+footer > a {
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+button {
+    background-color: #303030;
+    padding: 10px 80px 10px 80px;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    box-shadow: rgba(59, 59, 59, 0.593) 0px 0px 20px;
+}
+
+button:hover {
+    background-color: #303030b0;
+}
+
+main > div:nth-child(5),
+main > div:nth-child(6),
+main > div:nth-child(7),
+main > div:nth-child(12)
+  {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+main div:nth-child(5) > button,
+main div:nth-child(6) > button,
+main div:nth-child(7) > button,
+main div:nth-child(12) > button {
+    padding: 10px 15px 10px 15px;
+}
+
+main div:nth-child(5) > p,
+main div:nth-child(6) > p,
+main div:nth-child(7) > p,
+main div:nth-child(12) > p {
+    font-size: 30px;
+    color: white;
+    font-weight: 900;
+    text-shadow: #303030 0px 0px 20px;
+}
+
+main > div:nth-child(8),
+main > div:nth-child(9),
+main > div:nth-child(10),
+main > div:nth-child(11) {
+    background-color: #68717a;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    text-align: justify;
+    color: white;
+    line-height: 1.4;
+    font-size: 13px;
+    padding: 10px 20px 10px 20px;
+}
+
+main > div:nth-child(10),
+main > div:nth-child(11) {
+    background-color: #64819f;
 }
